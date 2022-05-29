@@ -9,7 +9,6 @@ class Human {
     this.yurak = obj.yurak == undefined ? true : obj.yurak  
   }
 }
-
 // VORISLIK
 class Man extends Human {
   constructor (obj){
@@ -45,8 +44,6 @@ const ayol = new Woman ({
 ) 
 
 // instanceof - bu nimadan keb chiqganini aniqlab beradi
-
-
 const navigation = document.querySelector('.header__nav')
 
 class Scroll {
@@ -78,9 +75,6 @@ class Scroll {
       } 
   }
 }
-
-
-
 const obj = new Scroll ({
   el: navigation,
   top: '100'
@@ -94,7 +88,6 @@ class Random {
     this.header.addEventListener('mouseover', () => this.mathRandom())
   }
   mathRandom(){
-    
      let randomNumberTop = Math.floor(Math.random()*(window.innerHeight-100))
      let randomNumberRight = Math.floor(Math.random()*(window.innerWidth-100))
     return this.header.style.marginTop = `${randomNumberTop}px`, this.header.style.marginRight = `${randomNumberRight}px`, console.log(this.header.style.marginTop);
