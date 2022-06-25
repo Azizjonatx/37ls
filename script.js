@@ -58,6 +58,7 @@ class Scroll {
     this.el.style.top = this.scrollUnit() + 'px'
     this.el.style.position = 'fixed'
     window.addEventListener('scroll', () => this.scroll())
+    window.addEventListener('resize', () => this.scroll())
   }
   scroll(){
     this.measure = this.scrollUnit()
@@ -80,6 +81,7 @@ const obj = new Scroll ({
   top: '100'
 })
 
+/* 
 
 const logo = document.querySelector('.header__content')
 class Random {
@@ -95,5 +97,6 @@ class Random {
 }
 const RandomObj = new Random ({
   header: logo
-})
+}) */
+
 
